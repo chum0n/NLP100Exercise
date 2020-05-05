@@ -1,5 +1,15 @@
 # 言語処理100本ノック2020を学ぶ際のメモ
 
+## サイト
+
+[言語処理100本ノック](https://nlp100.github.io/ja/)
+
+[言語処理100本ノックでPythonに入門](https://qiita.com/hi-asano/items/02d82cc1e89fc663b4e6)
+
+[素人の言語処理100本ノック:まとめ](https://qiita.com/segavvy/items/fb50ba8097d59475f760)
+
+[言語処理100本ノック2020年版が公開！どこが変わったの？](https://qiita.com/hi-asano/items/3c17943ce06f9999ec6f)
+
 ## 第１章
 
 スライスを使うと部分文字列を簡単に取得できる
