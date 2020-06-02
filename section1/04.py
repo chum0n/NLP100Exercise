@@ -12,3 +12,5 @@ for i in range(len(words)):
         ans[word[:2]] = i+1
 
 print(ans)
+
+# enumulate

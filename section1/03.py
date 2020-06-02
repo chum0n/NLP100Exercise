@@ -5,3 +5,5 @@ for word in words:
     ans.append(len(word.rstrip(",."))) # 右端から,または.をできるだけ削る
 
 print(ans)
+
+# generator式
