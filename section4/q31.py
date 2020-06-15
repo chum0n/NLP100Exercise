@@ -8,7 +8,7 @@ mecabfunc.parse_txt()
 verbs_set = set() # 動詞を入れていく *1
 verbs_list = [] # 出現順を確認するためのリスト
 
-# linesは1文の各形態素を辞書化したリスト
+# linesは1文の各形態素を辞書化したものが集まったリスト
 lines = mecabfunc.fix_mecab()
 # *2
 for line in lines:

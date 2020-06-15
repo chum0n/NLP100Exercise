@@ -12,11 +12,9 @@ for line in lines:
     # 見つけた名詞を追加していくリスト
     nouns = []
     for morpheme in line:
-
         # 名詞ならnounsに追加
         if morpheme['pos'] == '名詞':
             nouns.append(morpheme['surface'])
-
         # 名詞以外なら、それまでの連続する名詞をmultinouns_listに追加
         else:
             if len(nouns) > 1: # 名詞が二つ以上続いている語であれば

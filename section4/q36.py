@@ -30,7 +30,7 @@ words = zipped_cwlist[0]
 counts = zipped_cwlist[1]
 
 # グラフを書く *3
-# 日本語表示させるため *3
+# 日本語表示させるため *4
 font_path = './07Yasashisa/07やさしさゴシック.ttf'
 font_prop = FontProperties(fname=font_path)
 

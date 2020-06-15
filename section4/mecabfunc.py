@@ -1,4 +1,3 @@
-# coding: utf-8
 import MeCab
 
 # neko.txtを形態素解析してneko.txt.mecabに保存
@@ -13,10 +12,14 @@ def parse_txt():
 
 # 形態素解析結果のジェネレータ *2
 def fix_mecab():
+    '''
 
+    戻り値：
+    1文の各形態素を辞書化したリスト
+    '''
     with open('neko.txt.mecab') as parsed_file:
 
-        morphemes = [] # morphemeは日本語で形態素という意味。モーフィム。各形態素を辞書化したものでできた1文。
+        morphemes = [] # morphemeは英語で形態素
         for line in parsed_file:
 
             # 表層形とそれ以外をタブで分ける *3
@@ -40,18 +43,3 @@ def fix_mecab():
             if rest_cols[1] == '句点':
                 yield morphemes # 関数内でreturnの代わりにyieldを使うと、次の呼び出し時にそこから再開される
                 morphemes = []
-
-# 形態素解析
-parse_txt()
-
-# linesは1文の各形態素を辞書化したものが集まったリスト(となる。ジェネレータなのでちょっと違う)
-lines = fix_mecab()
-
-for line in lines:
-    print(line)
-
-# # 先頭3つの要素表示
-# for i, line in enumerate(lines):
-#     if i == 3:
-#         break
-#     print(line)

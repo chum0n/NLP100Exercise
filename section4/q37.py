@@ -23,18 +23,18 @@ for line in lines:
             word_counter.update(other_mor['base'] for other_mor in line if other_mor['surface'] != '猫')
             break
 
-# 出現頻度が高い10語のリストを取得 *1
+# 出現頻度が高い10語のリストを取得
 commonwords_list = word_counter.most_common(10)
 
 print(commonwords_list)
 
-# 単語と出現数のリストに分解 *2
+# 単語と出現数のリストに分解
 zipped_cwlist = list(zip(*commonwords_list))
 words = zipped_cwlist[0]
 counts = zipped_cwlist[1]
 
-# グラフを書く *3
-# 日本語表示させるため *3
+# グラフを書く
+# 日本語表示させるため
 font_path = './07Yasashisa/07やさしさゴシック.ttf'
 font_prop = FontProperties(fname=font_path)
 
@@ -51,7 +51,7 @@ plt.xticks(
     fontproperties=font_prop # 日本語のため
 )
 
-# タイトルとラベルとグリッド *5
+# タイトルとラベルとグリッド
 plt.title("The 10 most frequently co-occurring words")
 plt.xlabel("word")
 plt.ylabel("frequency")
@@ -60,5 +60,5 @@ plt.grid(axis='y')
 # # 表示(グラフ保存の時は見れない)
 # plt.show()
 
-# グラフの保存 *6
+# グラフの保存
 plt.savefig("graph37.png")
