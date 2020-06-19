@@ -27,7 +27,6 @@ for line in mecabfunc.fix_mecab():
 # リストを丸ごとsetに
 verbs_set = set(verbs_list)
 
-
 # # verbs_listを使って出現順にソートして表示
 # print(sorted(verbs_set, key=verbs_list.index))
 
