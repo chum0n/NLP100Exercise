@@ -10,6 +10,8 @@
 
 [言語処理100本ノック2020年版が公開！どこが変わったの？](https://qiita.com/hi-asano/items/3c17943ce06f9999ec6f)
 
+[u++の備忘録](https://upura.hatenablog.com/entry/2020/04/14/024948)
+
 ## 第１章
 
 スライスを使うと部分文字列を簡単に取得できる
